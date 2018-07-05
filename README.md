@@ -42,4 +42,12 @@ Build
 2. v2 实战：配置文件读取
 3. v3 实战：记录和管理API日志
 4. v4 实战：初始化Mysql数据库并建立连接
+5. v5 实战：自定义业务错误信息
+```
+  > curl -XPOST -H "Content-Type: application/json" http://127.0.0.1:8080/v1/user
+  > curl -XPOST -H "Content-Type: application/json" http://127.0.0.1:8080/v1/user -d'{"username":"admin"}'
+  > curl -XPOST -H "Content-Type: application/json" http://127.0.0.1:8080/v1/user -d'{"password":"admin"}'
+  > curl -XPOST -H "Content-Type: application/json" http://127.0.0.1:8080/v1/user -d'{"username":"admin","password":"admin"}'
+```
 
+ 
