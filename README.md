@@ -53,3 +53,11 @@ Build
 ```
   > curl -XPOST -H "Content-Type: application/json" http://127.0.0.1:8080/v1/user/admin2?desc=test -d'{"username":"admin","password":"admin"}'
 ```
+7. v7 实战：用户业务逻辑处理（业务处理）
+```
+  > curl -XPOST -H "Content-Type: application/json" http://127.0.0.1:8080/v1/user -d'{"username":"kong","password":"kong123"}'
+  > curl -XGET -H "Content-Type: application/json" http://127.0.0.1:8080/v1/user -d'{"offset": 0, "limit": 20}'
+  > curl -XGET -H "Content-Type: application/json" http://127.0.0.1:8080/v1/user/kong
+  > curl -XPUT -H "Content-Type: application/json" http://127.0.0.1:8080/v1/user/2 -d'{"username":"kong","password":"kongmodify"}'
+  > curl -XDELETE -H "Content-Type: application/json" http://127.0.0.1:8080/v1/user/2
+```
