@@ -42,3 +42,10 @@ curl -v -XPOST -H "Content-Type: application/json" http://127.0.0.1:8080/user -d
   > ./go-api-server
   > ./go-api-server -c config_file.yaml
 ```
+
+3. v3 实战：记录和管理API日志
+```
+  > cd go-api-server
+  > go build -v .
+  > ./go-api-server
+```
