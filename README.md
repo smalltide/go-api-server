@@ -9,6 +9,7 @@ Use golang to make a restful api server
 5. swagger
 6. nginx
 7. Viper (Go configuration with fangs)
+8. gorm (Go ORM lib)
 
 ### cURL
 -X/--request [GET|POST|PUT|DELETE|…]  指定请求的 HTTP 方法  
@@ -22,30 +23,23 @@ curl -v -XPOST -H "Content-Type: application/json" http://127.0.0.1:8080/user -d
 ```
 
 ### Branch
-1. v1 实战：启动一个最简单的RESTful API服务器
+Build  
 ```
   > cd $GOPATH/src
   > git clone https://github.com/lexkong/vendor
   > cd go-api-server
   > go build -v .
   > ./go-api-server
+```
+
+1. v1 实战：启动一个最简单的RESTful API服务器
+```
   > curl -XGET http://127.0.0.1:8080/sd/health
   > curl -XGET http://127.0.0.1:8080/sd/disk
   > curl -XGET http://127.0.0.1:8080/sd/cpu
   > curl -XGET http://127.0.0.1:8080/sd/ram
 ```
-
 2. v2 实战：配置文件读取
-```
-  > cd go-api-server
-  > go build -v .
-  > ./go-api-server
-  > ./go-api-server -c config_file.yaml
-```
-
 3. v3 实战：记录和管理API日志
-```
-  > cd go-api-server
-  > go build -v .
-  > ./go-api-server
-```
+4. v4 实战：初始化Mysql数据库并建立连接
+
