@@ -61,3 +61,8 @@ Build
   > curl -XPUT -H "Content-Type: application/json" http://127.0.0.1:8080/v1/user/2 -d'{"username":"kong","password":"kongmodify"}'
   > curl -XDELETE -H "Content-Type: application/json" http://127.0.0.1:8080/v1/user/2
 ```
+8. v8 实战：HTTP调用添加自定义处理逻辑
+```
+  >  curl -v -XGET -H "Content-Type: application/json" http://127.0.0.1:8080/v1/user
+```
+
