@@ -120,3 +120,8 @@ Build
   > go test -coverprofile=cover.out
   > go tool cover -func=cover.out
 ```
+16. v16 进阶：API性能分析
+```
+  > go tool pprof http://127.0.0.1:8080/debug/pprof/profile
+  > http://127.0.0.1:8080/debug/pprof/
+```
