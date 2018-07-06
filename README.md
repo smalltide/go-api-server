@@ -1,3 +1,4 @@
+
 # go-api-server
 Use golang to make a restful api server
 
@@ -10,6 +11,8 @@ Use golang to make a restful api server
 6. nginx
 7. Viper (Go configuration with fangs)
 8. gorm (Go ORM lib)
+9. JWT
+10. HTTPS
 
 ### cURL
 -X/--request [GET|POST|PUT|DELETE|…]  指定请求的 HTTP 方法  
@@ -89,4 +92,15 @@ Build
 ```
   > make 
   > ./go-api-server -v
+```
+进阶：给API增加启动脚本
+```
+  > ./admin.sh -h
+  > ./admin.sh status
+  > ./admin.sh start
+  > ./admin.sh status
+  > ./admin.sh restart
+  > ./admin.sh status
+  > ./admin.sh stop
+  > ./admin.sh status
 ```
