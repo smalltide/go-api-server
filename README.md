@@ -125,3 +125,10 @@ Build
   > go tool pprof http://127.0.0.1:8080/debug/pprof/profile
   > http://127.0.0.1:8080/debug/pprof/
 ```
+17. v17 进阶：生成Swagger在线文档
+```
+  > swag init
+  > make
+  > ./go-api-server
+  > http://127.0.0.1:8080/swagger/index.html
+```
