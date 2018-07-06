@@ -93,7 +93,7 @@ Build
   > make 
   > ./go-api-server -v
 ```
-进阶：给API增加启动脚本
+13. v13 进阶：给API增加启动脚本
 ```
   > ./admin.sh -h
   > ./admin.sh status
@@ -103,4 +103,20 @@ Build
   > ./admin.sh status
   > ./admin.sh stop
   > ./admin.sh status
+```
+14. v14 进阶：基于Nginx的API部署方案
+15. v15 进阶：go test测试你的代码
+```
+  > cd util
+  > go test
+  > go test -v
+  > go test -v -count 2
+  > go test -test.bench=".*"
+  > go test -bench=".*" -cpuprofile=cpu.profile
+  > go tool pprof util.test cpu.profile
+  > top
+  > go tool pprof util.test cpu.profile
+  > svg
+  > go test -coverprofile=cover.out
+  > go tool cover -func=cover.out
 ```
